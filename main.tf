@@ -120,8 +120,6 @@ module "ses_user" {
 
   enabled = local.create_user_enabled
 
-  iam_access_key_max_age = var.iam_access_key_max_age
-
   create_iam_access_key = var.iam_create_access_key
 
   ssm_ses_smtp_password_enabled = var.iam_create_ses_smtp_password
